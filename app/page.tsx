@@ -1,6 +1,6 @@
 'use client';
 
-import './globals.css';
+import './styles/globals.css';
 import HeaderLink from "@/components/HeaderComponents/HeaderLink";
 import TechnologyIcon from '@/components/HomeComponents/TechnologyIcon';
 import Link from 'next/link';
@@ -26,7 +26,6 @@ export default function Home() {
   useEffect(() => {
     const myObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
           entry.target.classList.add('scrollShow')
         } else {
@@ -40,8 +39,7 @@ export default function Home() {
 
     return () => myObserver.disconnect();
   });
-
-
+  
   return (
     <>
       <header className="w-full h-24 bg-black flex flex-row justify-between items-center px-8 -mt-40 z-10 fixed">
@@ -150,12 +148,12 @@ export default function Home() {
             <ProjectCard
               imageSrc='/assets/ProjectThumbnails/LiveDocs.png'
               title='LiveDocs'
-              projectHref='#'
+              projectHref='./projetos/LiveDocs'
             />
             <ProjectCard
               imageSrc='/assets/ProjectThumbnails/CarePulse.png'
               title='CarePulse'
-              projectHref='#'
+              projectHref='./projetos/CarePulse'
             />
           </div>
         </section>

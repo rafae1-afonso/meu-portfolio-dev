@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import LinkButton from '../ui/LinkButton';
 
 const ProjectCard = ({ imageSrc, title, projectHref }: { imageSrc: string, title: string, projectHref: string }) => {
     return (
@@ -14,11 +15,7 @@ const ProjectCard = ({ imageSrc, title, projectHref }: { imageSrc: string, title
             />
             <h1 className='text-2xl self-start mb-3 font-bold'>{title}</h1>
             <div className='flex gap-20'>
-                <Link href={projectHref}
-                    className='bg-gray-950 p-4 rounded-2xl hover:text-cyan-300 hover:brightness-125 duration-500'
-                >
-                    DETALHES
-                </Link>
+                <LinkButton linkRef={projectHref}>DETALHES</LinkButton>
             </div>
         </div>
     )
