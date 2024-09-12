@@ -41,7 +41,7 @@ const ProjectPageComponent = ({ thumbImageSrc, deployRef, repoRef, children }: P
 
                 <Link href='/#projects' className='font-bold text-white duration-500 hover:text-cyan-300'>&lt; RETURN</Link>
 
-                <div className='flex items-center ml-24'>
+                <div className='hidden md:flex items-center ml-24'>
                     <h1 className='logo text-center'><strong className='text-cyan-300'>&lt;</strong> RAFAEL AF0NSO DEV <strong className='text-cyan-300'>/&gt;</strong></h1>
                 </div>
 
@@ -63,7 +63,7 @@ const ProjectPageComponent = ({ thumbImageSrc, deployRef, repoRef, children }: P
             </header>
 
             <section id='about' className='flex flex-col items-center gap-40 p-24 scrollHidden'>
-                <div className='flex gap-40 mt-16'>
+                <div className='flex flex-col md:flex-row gap-40 mt-16'>
 
                     <div className='flex flex-col justify-center items-center gap-12 bg-gray-900 p-5 rounded-lg'>
                         <Image
@@ -80,7 +80,7 @@ const ProjectPageComponent = ({ thumbImageSrc, deployRef, repoRef, children }: P
                         </div>
                     </div>
 
-                    <article className='text-lg w-[35rem] h-auto p-5 leading-8 bg-gray-900 rounded-lg'>
+                    <article className='text-lg md:w-[35rem] h-auto p-5 leading-8 bg-gray-900 rounded-lg'>
                         {children}
                     </article>
                 </div>

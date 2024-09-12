@@ -23,6 +23,7 @@ import SkillsList from '@/components/AboutComponents/SkillsList';
 
 export default function Home() {
 
+  // Observer useEffect
   useEffect(() => {
     const myObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -39,11 +40,11 @@ export default function Home() {
 
     return () => myObserver.disconnect();
   });
-  
+
   return (
     <>
-      <header className="w-full h-24 bg-black flex flex-row justify-between items-center px-8 -mt-40 z-10 fixed">
-        <div className='flex items-center'>
+      <header className="w-full h-24 bg-black flex flex-row justify-between items-center px-8 md:-mt-40 md:z-10 md:fixed">
+        <div className='hidden md:flex items-center'>
           <h1 className='logo text-center'><strong className='text-cyan-300'>&lt;</strong> RAFAEL AF0NSO DEV <strong className='text-cyan-300'>/&gt;</strong></h1>
         </div>
 
@@ -53,7 +54,7 @@ export default function Home() {
           <HeaderLink title='PROJECTS' link='#projects' />
         </nav>
 
-        <section className='flex items-center justify-center gap-6 px-8'>
+        <section className='hidden md:flex items-center justify-center gap-6 px-8'>
 
           <Link href='https://www.linkedin.com/in/rafaelafonsofl/' target='_blank'>
             <FaLinkedin size={25} className='cursor-pointer duration-500 hover:-translate-y-1 hover:fill-cyan-300' />
@@ -72,13 +73,29 @@ export default function Home() {
 
       <main>
         {/* Home */}
-        <section id='home' className='flex flex-row items-center justify-center gap-44 p-24 my-40'>
+        <section id='home' className='flex flex-col md:flex-row items-center justify-center gap-6 md:gap-44 p-24 my-48 md:my-40'>
           <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-5xl mb-6 font-bold'>Rafael Afonso</h1>
-            <h2 className='text-xl'>Desenvolvedor <strong>Full-Stack</strong></h2>
+            <h1 className='text-4xl md:text-5xl mb-6 font-bold'>Rafael Afonso</h1>
+            <h2 className='text-md md:text-xl'>Desenvolvedor <strong>Full-Stack</strong></h2>
           </div>
 
-          <div className='p-7 rounded-md bg-gray-900 grid grid-cols-4 gap-24'>
+          <section className='flex md:hidden items-center justify-center gap-6 px-8'>
+
+            <Link href='https://www.linkedin.com/in/rafaelafonsofl/' target='_blank'>
+              <FaLinkedin size={25} className='cursor-pointer duration-500 hover:-translate-y-1 hover:fill-blue-600' />
+            </Link>
+
+            <Link href='https://github.com/rafae1-afonso' target='_blank'>
+              <FaGithubSquare size={25} className='cursor-pointer duration-500 hover:-translate-y-1 hover:fill-purple-700' />
+            </Link>
+
+            <Link href='https://www.instagram.com/_rafa.afonso/' target='_blank'>
+              <FaInstagramSquare size={25} className='cursor-pointer duration-500 hover:-translate-y-1 hover:fill-pink-600' />
+            </Link>
+
+          </section>
+
+          <div className='hidden p-7 rounded-md bg-gray-900 md:grid grid-cols-4 gap-24'>
             <TechnologyIcon icon={<FaHtml5 size={40} className='technologyIcon group-hover:translate-y-0 group-hover:fill-orange-500' />} name='HTML' />
             <TechnologyIcon icon={<FaCss3Alt size={40} className='technologyIcon group-hover:translate-y-0 group-hover:fill-blue-500' />} name='CSS' />
             <TechnologyIcon icon={<FaJs size={40} className='technologyIcon group-hover:translate-y-0 group-hover:fill-yellow-400' />} name='JavaScript' />
@@ -93,9 +110,9 @@ export default function Home() {
         {/* About */}
         <section id='about' className='flex flex-col items-center gap-40 mb-36'>
 
-          <h1 className='text-4xl font-bold'>ABOUT</h1>
+          <h1 className='text-3xl md:text-4xl font-bold'>ABOUT</h1>
 
-          <div className='flex gap-32 mx-48'>
+          <div className='flex flex-col md:flex-row gap-32 mx-20 md:mx-48'>
             <Image
               className='rounded-full scrollHidden'
               src='https://media.licdn.com/dms/image/v2/D4D03AQHx7xPlMeOY9g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721940303623?e=1730937600&v=beta&t=Jll-lTDVFeaGj6VsysBitmOD4qwvinglKjoRZaj_HDA'
@@ -120,7 +137,7 @@ export default function Home() {
             </article>
           </div>
 
-          <div className='flex justify-center gap-64'>
+          <div className='flex flex-col md:flex-row justify-center  md:gap-64'>
             <SkillsList title='Hard Skills'>
               <li>HTML, CSS, JavaScript</li>
               <li>TypeScript, NodeJS</li>
