@@ -87,7 +87,7 @@ const ProjectPageComponent = ({ thumbImageSrc, deployRef, repoRef, children }: P
             </main>
 
             <footer className='flex w-full h-24 justify-center items-center gap-1 bg-black'>
-                <Link className='underline duration-500 hover:text-cyan-400 font-bold' target='_blank' href='/'>Portfólio</Link> desenvolvido por <strong>Rafael Afonso</strong>
+                <Link className='underline duration-500 hover:text-cyan-400 font-bold' target='_blank' href='https://github.com/rafae1-afonso/meu-portfolio-dev'>Portfólio</Link> desenvolvido por <strong>Rafael Afonso</strong>
             </footer>
         </>
     )
