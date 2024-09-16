@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: rgb(10, 10, 15);
+    background-image: linear-gradient(to bottom, rgb(10, 10, 15) 80%, rgb(8, 16, 19));
     color: white;
 }
 

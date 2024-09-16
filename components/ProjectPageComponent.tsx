@@ -31,7 +31,7 @@ const ProjectPageComponent = ({ thumbImageSrc, deployRef, repoRef, children }: P
 
         const scrollHiddenElements = document.querySelectorAll('.scrollHidden');
         scrollHiddenElements.forEach((element) => myObserver.observe(element));
-    
+
         return () => myObserver.disconnect();
     });
 
@@ -62,10 +62,10 @@ const ProjectPageComponent = ({ thumbImageSrc, deployRef, repoRef, children }: P
                 </section>
             </header>
 
-            <section id='about' className='flex flex-col items-center gap-40 p-24 scrollHidden'>
+            <main id='project' className='flex flex-col items-center gap-40 p-24 scrollHidden'>
                 <div className='flex flex-col md:flex-row gap-40 mt-16'>
 
-                    <div className='flex flex-col justify-center items-center gap-12 bg-gray-900 p-5 rounded-lg'>
+                    <div className='flex flex-col justify-center items-center gap-12 bg-card-gradient p-5 rounded-lg'>
                         <Image
                             className='rounded-lg border border-gray-900'
                             src={thumbImageSrc}
@@ -80,11 +80,15 @@ const ProjectPageComponent = ({ thumbImageSrc, deployRef, repoRef, children }: P
                         </div>
                     </div>
 
-                    <article className='text-lg md:w-[35rem] h-auto p-5 leading-8 bg-gray-900 rounded-lg'>
+                    <article className='text-lg md:w-[35rem] h-auto p-5 leading-8 bg-card-gradient rounded-lg'>
                         {children}
                     </article>
                 </div>
-            </section>
+            </main>
+
+            <footer className='flex w-full h-24 justify-center items-center gap-1 bg-black'>
+                <Link className='underline duration-500 hover:text-cyan-400 font-bold' target='_blank' href='/'>Portfólio</Link> desenvolvido por <strong>Rafael Afonso</strong>
+            </footer>
         </>
     )
 }

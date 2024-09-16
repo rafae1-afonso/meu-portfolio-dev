@@ -75,7 +75,7 @@ export default function Home() {
         {/* Home */}
         <section id='home' className='flex flex-col md:flex-row items-center justify-center gap-6 md:gap-44 p-24 my-48 md:my-40'>
           <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-4xl md:text-5xl mb-6 font-bold'>Rafael Afonso</h1>
+            <h1 className='text-4xl md:text-4xl text-center mb-6 font-bold'>Rafael Afonso</h1>
             <h2 className='text-md md:text-xl'>Desenvolvedor <strong>Full-Stack</strong></h2>
           </div>
 
@@ -95,7 +95,7 @@ export default function Home() {
 
           </section>
 
-          <div className='hidden p-7 rounded-md bg-gray-900 md:grid grid-cols-4 gap-24'>
+          <div className='hidden p-7 rounded-md bg-card-gradient md:grid grid-cols-4 gap-24'>
             <TechnologyIcon icon={<FaHtml5 size={40} className='technologyIcon group-hover:translate-y-0 group-hover:fill-orange-500' />} name='HTML' />
             <TechnologyIcon icon={<FaCss3Alt size={40} className='technologyIcon group-hover:translate-y-0 group-hover:fill-blue-500' />} name='CSS' />
             <TechnologyIcon icon={<FaJs size={40} className='technologyIcon group-hover:translate-y-0 group-hover:fill-yellow-400' />} name='JavaScript' />
@@ -112,7 +112,7 @@ export default function Home() {
 
           <h1 className='text-3xl md:text-4xl font-bold'>ABOUT</h1>
 
-          <div className='flex flex-col md:flex-row gap-32 mx-20 md:mx-48'>
+          <div className='flex flex-col items-center lg:flex-row gap-32 mx-20 lg:mx-48'>
             <Image
               className='rounded-full scrollHidden'
               src='https://media.licdn.com/dms/image/v2/D4D03AQHx7xPlMeOY9g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721940303623?e=1730937600&v=beta&t=Jll-lTDVFeaGj6VsysBitmOD4qwvinglKjoRZaj_HDA'
@@ -121,7 +121,7 @@ export default function Home() {
               alt='foto de perfil minha do linkedin'
             />
 
-            <article className='scrollHidden text-lg p-5 leading-8 bg-gray-900 rounded-lg'>
+            <article className='scrollHidden text-lg p-5 leading-8 bg-card-gradient rounded-lg'>
               Lorem ipsum dolor sit amet
               consectetur adipisicing elit.
               Praesentium distinctio ipsa excepturi
@@ -137,7 +137,7 @@ export default function Home() {
             </article>
           </div>
 
-          <div className='flex flex-col md:flex-row justify-center  md:gap-64'>
+          <div className='flex flex-col md:flex-row justify-center md:gap-64'>
             <SkillsList title='Hard Skills'>
               <li>HTML, CSS, JavaScript</li>
               <li>TypeScript, NodeJS</li>
@@ -176,6 +176,10 @@ export default function Home() {
         </section>
 
       </main>
+
+      <footer className='flex w-full h-24 justify-center items-center gap-1 bg-black'>
+        <Link className='underline duration-500 hover:text-cyan-400 font-bold' target='_blank' href='/'>Portfólio</Link> desenvolvido por <strong>Rafael Afonso</strong>
+      </footer>
     </>
   );
 }

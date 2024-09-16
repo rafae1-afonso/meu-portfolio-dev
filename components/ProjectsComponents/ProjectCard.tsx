@@ -5,7 +5,7 @@ import LinkButton from '../ui/LinkButton';
 
 const ProjectCard = ({ imageSrc, title, projectHref }: { imageSrc: string, title: string, projectHref: string }) => {
     return (
-        <div className='flex flex-col justify-center items-center gap-5 bg-gray-900 p-6 rounded-xl scrollHidden'>
+        <div className='flex flex-col justify-center items-center gap-5 bg-card-gradient p-6 rounded-xl scrollHidden'>
             <Image
                 className='rounded-xl'
                 src={imageSrc}
