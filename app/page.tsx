@@ -155,7 +155,7 @@ export default function Home() {
         <section id='projects' className='flex flex-col items-center gap-12'>
           <h1 className='text-4xl font-bold'>PROJECTS</h1>
 
-          <div className='flex mx-48 my-20 gap-8'>
+          <div className='flex flex-col md:flex-row mx-48 my-20 gap-8'>
             <ProjectCard
               imageSrc='/assets/ProjectThumbnails/LiveDocs.png'
               title='LiveDocs'
