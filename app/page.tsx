@@ -76,7 +76,7 @@ export default function Home() {
         <section id='home' className='flex flex-col md:flex-row items-center justify-center gap-6 md:gap-44 p-24 my-48 md:my-40'>
           <div className='flex flex-col items-center justify-center'>
             <h1 className='text-4xl md:text-4xl text-center mb-6 font-bold'>Rafael Afonso</h1>
-            <h2 className='text-md md:text-xl'>Desenvolvedor <strong>Full-Stack</strong></h2>
+            <h2 className='text-md md:text-xl'>Desenvolvedor <strong>Web</strong></h2>
           </div>
 
           <section className='flex md:hidden items-center justify-center gap-6 px-8'>
@@ -122,18 +122,12 @@ export default function Home() {
             />
 
             <article className='scrollHidden text-lg p-5 leading-8 bg-card-gradient rounded-lg'>
-              Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.
-              Praesentium distinctio ipsa excepturi
-              provident, ea quo, saepe impedit incidunt
-              ducimus nulla quaerat amet cupiditate minus
-              soluta possimus voluptatem cum rem vel!
-              Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.
-              Praesentium distinctio ipsa excepturi
-              provident, ea quo, saepe impedit incidunt
-              ducimus nulla quaerat amet cupiditate minus
-              soluta possimus voluptatem cum rem vel!
+              Olá! Meu nome é Rafael Afonso, desde cedo demonstrei interesse em trabalhar
+              com tecnologia, sempre gostei de computadores e jogos.
+              Meus primeiros contatos com a programação foi no Roblox criando jogos para a
+              plataforma.
+              Atualmente eu prossigo estudando e aprendendo cada vez mais sobre a área, e já pretendo
+              aplicar profissionalmente.
             </article>
           </div>
 
