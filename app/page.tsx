@@ -115,7 +115,7 @@ export default function Home() {
           <div className='flex flex-col items-center lg:flex-row gap-32 mx-20 lg:mx-48'>
             <Image
               className='rounded-full scrollHidden'
-              src='https://media.licdn.com/dms/image/v2/D4D03AQHx7xPlMeOY9g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721940303623?e=1730937600&v=beta&t=Jll-lTDVFeaGj6VsysBitmOD4qwvinglKjoRZaj_HDA'
+              src='https://github.com/rafae1-afonso.png'
               width={350}
               height={350}
               alt='foto de perfil minha do linkedin'
