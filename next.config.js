@@ -3,7 +3,7 @@ module.exports = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'media.licdn.com',
+                hostname: 'github.com',
                 port: '',
             },
         ],
