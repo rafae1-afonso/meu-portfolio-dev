@@ -118,7 +118,7 @@ export default function Home() {
               src='https://github.com/rafae1-afonso.png'
               width={350}
               height={350}
-              alt='foto de perfil minha do linkedin'
+              alt='foto de perfil minha do github'
             />
 
             <article className='scrollHidden text-lg p-5 leading-8 bg-card-gradient rounded-lg'>
